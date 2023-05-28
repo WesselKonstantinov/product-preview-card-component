@@ -20,6 +20,7 @@ body {
   font-family: var(--body-font);
   font-size: 0.875rem;
   font-weight: var(--font-weight-medium);
+  line-height: 1.64;
   display: grid;
   place-content: center;
 }
@@ -49,6 +50,9 @@ body {
 
 .product-card__body {
   padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 .product-card__title-group {
@@ -64,10 +68,27 @@ body {
   line-height: 1.25;
 }
 
-.product-card__title {
+.product-card__title,
+.product-card__new-price {
   color: var(--color-dark-blue);
   font-family: var(--heading-font);
   font-weight: var(--font-weight-bold);
   font-size: 2rem;
   line-height: 1;
+}
+
+.product-card__prices {
+  margin-top: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1.1875rem;
+}
+
+.product-card__new-price {
+  color: var(--color-dark-cyan);
+}
+
+.product-card__old-price {
+  font-size: 0.8125rem;
+  line-height: 1.77;
 }
