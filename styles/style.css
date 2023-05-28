@@ -41,7 +41,7 @@ body {
 /* || Product preview card component styles */
 .product-card {
   margin: 1.75rem 1rem;
-  max-width: 21.4375rem;
+  max-width: 25rem;
   border-radius: 0.625rem;
   overflow: hidden;
   background-color: var(--color-white);
@@ -96,7 +96,7 @@ body {
 
 .product-card__cta {
   margin-top: 0.25rem;
-  padding: 1rem;
+  padding: 0.96875rem;
   cursor: pointer;
   border: none;
   border-radius: 0.5rem;
@@ -126,4 +126,32 @@ body {
   color: var(--color-white);
   font-weight: var(--font-weight-bold);
   line-height: 1.21;
+}
+
+@media (min-width: 43.75rem) {
+  .product-card {
+    max-width: 37.5rem;
+    flex-direction: row;
+  }
+
+  .product-card > * {
+    flex-basis: 50%;
+  }
+
+  .product-card__body {
+    padding: 2rem;
+    gap: 1.5rem;
+  }
+
+  .product-card__title-group {
+    gap: 1.25rem;
+  }
+
+  .product-card__prices {
+    margin-top: 0.3125rem;
+  }
+
+  .product-card__cta {
+    margin-top: 0.375rem;
+  }
 }
