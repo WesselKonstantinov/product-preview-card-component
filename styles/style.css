@@ -7,8 +7,28 @@
   --color-dark-blue: hsl(212 21% 14%);
   --color-dark-grayish-blue: hsl(228 12% 48%);
   --color-white: hsl(0 0% 100%);
-  --heading-font: "Montserrat", sans-serif;
-  --body-font: "Fraunces", serif;
+  --heading-font: "Fraunces", serif;
+  --body-font: "Montserrat", sans-serif;
   --font-weight-medium: 500;
   --font-weight-bold: 700;
+}
+
+/* || Global styles */
+body {
+  background-color: var(--color-cream);
+  color: var(--color-dark-grayish-blue);
+  font-family: var(--body-font);
+  font-size: 0.875rem;
+}
+
+.sr-only {
+  position: absolute;
+  width: 0.0625rem;
+  height: 0.0625rem;
+  padding: 0;
+  margin: -0.0625rem;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
 }
